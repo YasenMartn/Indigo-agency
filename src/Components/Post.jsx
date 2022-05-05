@@ -32,9 +32,7 @@ const Container = styled.div`
         ${Desc}{
             color: white;
         }
-        ${Button}{
-            color: red;
-        }
+        
        
     }
 `

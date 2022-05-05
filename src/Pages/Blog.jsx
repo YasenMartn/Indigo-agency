@@ -13,7 +13,7 @@ const Container = styled.div`
     justify-content: flex-start;
 `
 const Header = styled.h1`
-     color: var(--gray);
+    color: var(--gray);
     margin-bottom: 50px;
 `
 const PostsContainer = styled.div`
