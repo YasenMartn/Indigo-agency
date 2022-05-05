@@ -67,3 +67,12 @@ a{
 .link:hover{
     color: var(--iris);
 }
+
+.mobileLink{
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+}
+.mobileLink:hover{
+    color: black;
+}

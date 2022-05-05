@@ -31,3 +31,75 @@ export const services = [
     },
 ]
 
+
+export const blogPosts = [
+    {
+        id: 1,
+        title: "Post Title",
+        image: "/pictures/post1.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+        id: 2,
+        title: "Post Title",
+        image: "/pictures/post1.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+        id: 3,
+        title: "Post Title",
+        image: "/pictures/post1.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+]
+
+export const resources = [
+    {
+        id: 1,
+        title: "SEO Tools",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        image: "/pictures/link.png"
+    },
+    {
+        id: 2,
+        title: "Free SEO Tools",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        image: "/pictures/loading.png"
+    },
+    {
+        id: 3,
+        title: "Blogging Tools",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        image: "/pictures/message.png"
+    },
+    {
+        id: 4,
+        title: "Social Media Tools",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        image: "/pictures/people.png"
+    },
+    {
+        id: 5,
+        title: "Content Creation Tools",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        image: "/pictures/feather.png"
+    },
+    {
+        id: 6,
+        title: "Email Marketing Tools",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        image: "/pictures/mail.png"
+    },
+    {
+        id: 7,
+        title: "Virtual Assistant Tools",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        image: "/pictures/stick.png"
+    },
+    {
+        id: 8,
+        title: "Productivity Tools",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        image: "/pictures/clock.png"
+    },
+]

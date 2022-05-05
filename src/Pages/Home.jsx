@@ -5,13 +5,15 @@ import { mobile } from '../responsive';
 
 const Container = styled.div`
     width: 100%;
-    min-height: calc(100vh - 70px);
-    background-color: var(--nicewhite);
+    min-height: 100vh;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
     padding: 50px 30px;
+    padding-top: 70px;
+
 `
 const SmallTitleContainer = styled.div`
     display: flex;
