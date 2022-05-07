@@ -9,7 +9,7 @@ import ScrollToTop from "react-scroll-to-top";
 const Nav = styled.nav`
     width: 100%;
     height: 70px;
-    background-color: white;
+    background-color: var(--nicewhite);
     display: flex;
     align-items: center;
     justify-content: center;

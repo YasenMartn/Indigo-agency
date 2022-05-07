@@ -6,7 +6,7 @@ import { mobile } from '../responsive';
 const Container = styled.div`
     width: 100%;
     min-height: 100vh;
-    background-color: white;
+    background-color: var(--nicewhite);
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -58,7 +58,7 @@ const PictureContainer = styled.div`
     border-top-left-radius: 40px;
     border-bottom-right-radius: 40px;
     margin-bottom: 20px;
-    filter: drop-shadow(0 0 0.75rem var(--iris));
+    filter: drop-shadow(0 0 0.75rem black);
     overflow: hidden;
     position: relative;
     ${mobile({width: "100%", height: "270px"})};

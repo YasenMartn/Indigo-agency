@@ -1,6 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from "styled-components";
 import Button from '../Components/Button';
+import { mobile } from '../responsive';
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
+
 
 const Container = styled.div`
     width: 100%;
@@ -9,6 +15,7 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: var(--nicewhite);
     padding: 20px;
 `
 const Header = styled.h1`
@@ -26,6 +33,8 @@ const Form = styled.form`
     flex-direction: column;
     padding: 40px;
     border: 1px solid var(--lightpurple);
+    ${mobile({width: "100%"})};
+
 `
 const Label = styled.label`
     color: white;
@@ -52,20 +61,27 @@ const TextArea = styled.textarea`
 
 
 const Contact = () => {
+
+    const [firstName, setFirstName] = useState("")
+    const [lastName, setLastName] = useState("")
+    const [email, setEmail] = useState("")
+    const [message, setMessage] = useState("")
+
+
+
   return (
     <Container id="contactUs">
         <Header>Contact Us</Header>
-        <Form>
+        <Form  data-aos="fade-right" data-aos-delay="500" data-aos-offset="350">
             <Label>First Name</Label>
-            <Input type="text" placeholder='First Name' />
+            <Input type="text" placeholder='First Name' onChange={(e)=>setFirstName(e.target.value)} />
             <Label>Last Name</Label>
-            <Input type="text" placeholder='Last Name' />
+            <Input type="text" placeholder='Last Name' onChange={(e)=>setLastName(e.target.value)} />
             <Label>Email</Label>
-            <Input type="email" placeholder='Email' />
+            <Input type="email" placeholder='Email' onChange={(e)=>setEmail(e.target.value)} />
             <Label>Message</Label>
-            <TextArea placeholder='your message' />
+            <TextArea placeholder='your message' onChange={(e)=>setMessage(e.target.value)} />
             <Button width="100%" bg="white" color="var(--lightpurple)" weight={"800"} fz={"1.2rem"} >Submit</Button>
-
         </Form>
     </Container>
   )

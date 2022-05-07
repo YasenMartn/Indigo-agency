@@ -10,6 +10,7 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    background-color: var(--nicewhite);
     flex-direction: column;
 `
 const Header = styled.h1`

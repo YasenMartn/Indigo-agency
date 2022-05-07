@@ -11,6 +11,7 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    background-color: var(--nicewhite);
 `
 const Header = styled.h1`
     color: var(--gray);

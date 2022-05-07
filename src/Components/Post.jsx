@@ -1,6 +1,10 @@
 import React from 'react'
 import styled from "styled-components";
-import Button from "./Button"
+import Button from "./Button";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 const Title = styled.span`
     font-size: 1.2rem;
@@ -56,7 +60,7 @@ const Post = ({ post }) => {
     const {image, title, desc} = post
 
     return (
-        <Container>
+        <Container data-aos="fade-down" data-aos-delay="500">
             <ImageContainer>
                 <Image src={image} alt="image"/>
             </ImageContainer>

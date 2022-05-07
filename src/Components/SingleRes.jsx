@@ -1,5 +1,9 @@
 import React from 'react'
 import styled from "styled-components";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 const Container = styled.div`
    margin: 20px;
@@ -14,7 +18,7 @@ const Container = styled.div`
    padding: 20px;
    position: relative;
    border-radius: 15px;
-   box-shadow: -5px 5px black;
+   box-shadow: -5px 5px var(--gray);
    transition: all .5s ease-in-out;
    &:hover{
        transform: scale(1.1);
@@ -49,9 +53,7 @@ const Title = styled.span`
     &:hover{
         color: var(--orange);
     }
-
 `
-
 const Desc = styled.span`
     color: white;
     text-align: center;
@@ -63,7 +65,7 @@ const SingleRes = ({ item }) => {
     const { title, desc, image } = item
 
     return (
-        <Container>
+        <Container data-aos="fade-up" data-aos-delay="500">
             <Circle>
                 <Image src={image} alt="image"/>
             </Circle>

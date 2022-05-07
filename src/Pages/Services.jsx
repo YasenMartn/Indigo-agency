@@ -1,6 +1,10 @@
 import React from 'react';
 import styled from "styled-components";
-import {services} from "../data"
+import {services} from "../data";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 const Container = styled.div`
     width: 100%;
@@ -54,7 +58,7 @@ const Services = () => {
       <Header>Our Services</Header>
       <ServicesContainer>
         {services.map(service => (
-          <ServiceBox key={service.id}>
+          <ServiceBox key={service.id} data-aos={service.dir} data-aos-delay="500" >
              <ServiceTitle>{service.name}</ServiceTitle> 
              <ServiceDesc>{service.desc}</ServiceDesc>
           </ServiceBox>
