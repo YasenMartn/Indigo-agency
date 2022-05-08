@@ -87,7 +87,7 @@ const Navbar = () => {
 
   return (
     <Nav>
-        <ScrollToTop smooth color="#6f00ff" />
+        <ScrollToTop smooth color="#6f00ff" className='sttbtn' />
         <Left>
             <LogoContainer onClick={toggleMenu} >
                 <Image src='/pictures/p.png' spin={menu ? true : false}  />

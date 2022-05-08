@@ -55,8 +55,6 @@ const TextArea = styled.textarea`
     resize: none;
     font-size: 1rem;
     outline: none ;
-
-
 `
 
 
@@ -67,12 +65,16 @@ const Contact = () => {
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
 
+    const handleForm = (e) => {
+        e.preventDefault();
+    }
+
 
 
   return (
     <Container id="contactUs">
         <Header>Contact Us</Header>
-        <Form  data-aos="fade-right" data-aos-delay="500" data-aos-offset="350">
+        <Form  data-aos="fade-right" data-aos-delay="500" data-aos-offset="350" onSubmit={handleForm} >
             <Label>First Name</Label>
             <Input type="text" placeholder='First Name' onChange={(e)=>setFirstName(e.target.value)} />
             <Label>Last Name</Label>
@@ -81,7 +83,7 @@ const Contact = () => {
             <Input type="email" placeholder='Email' onChange={(e)=>setEmail(e.target.value)} />
             <Label>Message</Label>
             <TextArea placeholder='your message' onChange={(e)=>setMessage(e.target.value)} />
-            <Button width="100%" bg="white" color="var(--lightpurple)" weight={"800"} fz={"1.2rem"} >Submit</Button>
+            <Button width="100%" bg="white" color="var(--lightpurple)" weight={"500"} fz={"1.2rem"} >Submit</Button>
         </Form>
     </Container>
   )

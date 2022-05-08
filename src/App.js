@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import "./GlobalStyle.css"
 import Blog from "./Pages/Blog";
@@ -16,6 +17,7 @@ function App() {
       <Resources/>
       <Blog/>
       <Contact/>
+      <Footer/>
      
     </div>
   );

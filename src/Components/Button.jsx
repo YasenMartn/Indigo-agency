@@ -15,6 +15,7 @@ const Btn = styled.button`
     transition: all .2s ease-in-out;
     &:hover{
       background-color: ${props => props.hover ? props.hover : "var(--iris)"};
+      color: ${props => props.hover ? props.hover : "white"};;
 
     }
 `

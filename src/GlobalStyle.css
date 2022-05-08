@@ -76,3 +76,26 @@ a{
 .mobileLink:hover{
     color: black;
 }
+
+.icon{
+    margin: 5px;
+    font-size: 30px !important;
+    cursor: pointer;
+}
+.icon:hover{
+    color: black;
+}
+
+.newsLetter::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+.sttbtn{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
